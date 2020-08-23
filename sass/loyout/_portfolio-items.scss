@@ -1,0 +1,123 @@
+.btn-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0px;
+
+    &:focus,
+    &:hover {
+  color: white;
+  background-color: $acent-color;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+}
+
+
+.portolio-buttons {
+  display: flex;
+  margin-top: 93px;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  li:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+
+
+.portfolio-items {
+  /* width: calc((100%-60px) / 3); */
+  width: 370px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  
+    &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  
+    &:not(:nth-child(n + 7)) {
+    margin-bottom: 30px;
+  }
+    &:hover,
+    &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+
+    &-text {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+}
+
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-text-color;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+.portfolio-sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+  margin-left: 24px;
+}
+.portfolio-text {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 294px;
+  width: 322px;
+  height: 168px;
+  padding-left: 24px;
+  padding-top: 63px;
+  padding-right: 23px;
+  padding-bottom: 63px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &-box {
+    border: 1px solid #eeeeee;
+  }
+}
+
+.portfolio-items a:hover .portfolio-text {
+  top: 0;
+}
+

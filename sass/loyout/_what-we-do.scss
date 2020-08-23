@@ -1,0 +1,29 @@
+.what-we-do {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+
+.we-do-items {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.we-do-container {
+  display: flex;
+  margin-bottom: 94px;
+
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+

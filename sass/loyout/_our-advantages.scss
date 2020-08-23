@@ -1,0 +1,55 @@
+.advantages { 
+  display: flex;
+  li::before {
+    content: "";
+    display: inline-block;
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 100%;
+  }
+  li:not(:last-child) {
+  margin-right: 30px;
+  }
+   li {
+  width: 270px;
+  }
+  &-ikon {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f5f4fa;
+    }
+
+   }
+
+.antena::before {
+  background-image: url(../images/icons/icon-antena.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock::before {
+  background-image: url(../images/icons/icon-clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.computer::before {
+  background-image: url(../images/icons/icon-computer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.astronaut::before {
+  background-image: url(../images/icons/icon-astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
