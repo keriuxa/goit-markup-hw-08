@@ -1,5 +1,8 @@
 .advantages { 
-  display: flex;
+  display: block;
+  
+  // display: flex;
+
   li::before {
     content: "";
     display: inline-block;
@@ -7,12 +10,18 @@
     height: 120px;
     width: 100%;
   }
-  li:not(:last-child) {
-  margin-right: 30px;
+
+  li:not(:last-child){
+    margin-bottom: 30px;
   }
+  // li:not(:last-child) {
+  // margin-right: 30px;
+  // }
    li {
-  width: 270px;
+     width:calc(100% - 30px);
   }
+  
+
   &-ikon {
     padding-left: 100px;
     padding-right: 100px;
@@ -20,8 +29,9 @@
     padding-bottom: 25px;
     background-color: #f5f4fa;
     }
+  }
 
-   }
+   
 
 .antena::before {
   background-image: url(../images/icons/icon-antena.svg);

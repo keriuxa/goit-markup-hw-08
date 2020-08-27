@@ -13,12 +13,42 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    &-items {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $main-text-color;
+      position: relative;
+      a {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+    }
+    &-navigation {
+      display: none;
+    }
+
     a:hover, 
     a:focus {
   color: $acent-color;
   }
 }
         
+.contacts-list {
+  display: none;
+  margin-left: auto;
+
+  >.contacts {
+    margin-right: 30px;
+  }
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: $acent-color;
+}
+
    
 
 .navigation {
@@ -28,15 +58,38 @@
     color: $acent-color;
   }
 }
+.logo-web {
+  font-family:$secondary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $acent-color; 
+
+  // font-family:$secondary-font;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.9;
+  // color: $acent-color;
+}
 
 .logo-studio {
-  font-family: $secondary-font;
+  font-family:$secondary-font;
+  font-style: normal;
   font-weight: 700;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: $main-text-color;
-  margin-right: 85px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $main-text-color; 
+
+  // font-family: $secondary-font;
+  // font-weight: 700;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.2;
+  // color: $main-text-color;
+  // margin-right: 85px;
 }
 
 .curent::after {
@@ -49,26 +102,8 @@
   position: absolute;
   bottom: 0px;
 }
-.logo-web {
-  font-family:$secondary-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.9;
-  color: $acent-color;
-}
 
-.header-items {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $main-text-color;
-  position: relative;
-  a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
+
 
 
 .navigation-items .contacts {
@@ -90,26 +125,13 @@
 }
 
 
-.header-navigation {
-  display: flex;
-}
 
 .header-items:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-
-  >.contacts {
-    margin-right: 30px;
-  }
+.mobile-menu-svg
+{
+  fill: black;
+ 
 }
-
-.contacts:hover,
-.contacts:focus {
-  color: $acent-color;
-}
-
-

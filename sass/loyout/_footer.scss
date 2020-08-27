@@ -1,26 +1,23 @@
 .footer {
   background-color: #2f303a;
   
-  &-container {
-    display: flex;
-  }
-
+ 
    a:hover,
    a:focus {
   color: $acent-color;
 }
 
-  &-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 72px;
-    margin-bottom: 20px;
-    display: block;
-  }
+  // &-title {
+  //   font-weight: 700;
+  //   font-size: 14px;
+  //   line-height: 1.2;
+  //   letter-spacing: 0.03em;
+  //   text-transform: uppercase;
+  //   color: #ffffff;
+  //   margin-top: 72px;
+  //   margin-bottom: 20px;
+  //   display: block;
+  // }
     &-social-list-item {
     display: inline-block;
     width: 44px;
