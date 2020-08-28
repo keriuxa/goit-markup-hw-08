@@ -20,7 +20,7 @@ h3 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -312,6 +312,15 @@ img {
   border: 1px solid #ececec;
 }
 
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .header .contacts a {
   color: #757575;
 }
@@ -324,21 +333,22 @@ img {
 }
 
 .header-items {
-  font-weight: 400;
-  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
   position: relative;
+  color: #212121;
+  letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 
-.header-items a {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.header-items:not(:last-child) {
+  margin-bottom: 40px;
 }
 
-.header-navigation {
-  display: none;
+.header-items:last-child {
+  margin-bottom: 60px;
 }
 
 .header a:hover,
@@ -346,26 +356,65 @@ img {
   color: #2196f3;
 }
 
-.contacts-list {
+.navigation {
   display: none;
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.navigation.is-open {
+  display: block;
+}
+
+.navigation .curent > a {
+  color: #2196f3;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-btn:hover svg,
+.menu-btn:focus svg {
+  fill: #2196f3;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.icon-menu {
+  width: 44px;
+}
+
+.icon-close {
+  display: none;
+}
+
+.contacts-list {
   margin-left: auto;
 }
 
-.contacts-list > .contacts {
-  margin-right: 30px;
+.contacts-list > .contacts:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contacts-list > .contacts:last-child {
+  margin-bottom: 60px;
 }
 
 .contacts:hover,
 .contacts:focus {
-  color: #2196f3;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation .curent > a {
   color: #2196f3;
 }
 
@@ -401,8 +450,8 @@ img {
 }
 
 .navigation-items .contacts {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: #757575;
@@ -416,10 +465,6 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-items:not(:last-child) {
-  margin-right: 50px;
 }
 
 .mobile-menu-svg {
@@ -481,10 +526,6 @@ img {
 
 .advantages li:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.advantages li {
-  width: calc(100% - 30px);
 }
 
 .advantages-ikon {
@@ -638,7 +679,7 @@ img {
 }
 
 .clients-logo {
-  width: calc((100% - 60px) / 2);
+  width: calc((100% - 30px) / 2);
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   box-sizing: border-box;

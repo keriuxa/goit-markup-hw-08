@@ -16,11 +16,20 @@
     <!--ХЕДЕР-->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" class="link">
-            <span class="logo-web">Web </span
-            ><span class="logo-studio">Studio</span></a
-          >
+        
+        <a href="./index.html" class="link">
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span></a
+        >
+       
+          <button class="menu-btn" aria-expanded="false" aria-controls="navigation" data-menu-button>
+            <svg class="mobile-menu-svg"   width="24" height="16">
+          <use href="./images/sprite.svg#menu_mobile" class="icon-menu"></use>
+          <use href="./images/sprite.svg#icon-close-menu" class="icon-close"></use>
+               </svg>
+      </button>
+       
+        <nav class="navigation" data-menu>         
           <ul class="list header-navigation">
             <li class="header-items curent">
               <a href="./index.html" class="link">Студия</a>
@@ -51,18 +60,14 @@
                 +38 096 111 11 11</a
               >
             </li>
-          </ul>
-
-          <a href=""><svg class="mobile-menu-svg"   width="24" height="16">
-            <use href="./images/sprite.svg#menu_mobile"></use>
-          </svg></a>
+          </ul>          
         </nav>
       </div>
     </header>
 
     <main>
       <!--ЗАГОЛОВОК СТРАНИЦЫ-->
-      <section class="heroes">
+      <section class="heroes container">
         <h1 class="main-title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -617,5 +622,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
