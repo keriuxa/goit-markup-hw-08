@@ -8,10 +8,18 @@
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
+    @media screen and (min-width: 1200px)
+    {
+      display: block;
+    }
 }
 
 .we-do-main-container {
   display: none;
+  @media screen and (min-width: 1200px)
+    {
+      display: block;
+    }
 }
 
 .we-do-items {

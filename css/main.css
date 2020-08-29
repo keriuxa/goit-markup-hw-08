@@ -782,8 +782,20 @@ img {
   position: relative;
 }
 
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
+}
+
 .we-do-main-container {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .we-do-main-container {
+    display: block;
+  }
 }
 
 .we-do-items {
