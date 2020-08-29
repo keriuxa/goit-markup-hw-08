@@ -1,13 +1,13 @@
 .footer {
   background-color: #2f303a;
+  display:block;
+  text-align: center;
   
-  .container
-  {
-    display: inline-block;
-     text-align: center;
-    
+  >div {
+    padding-top:60px;
+    padding-bottom: 60px;
   }
- 
+   
    a:hover,
    a:focus {
   color: $acent-color;

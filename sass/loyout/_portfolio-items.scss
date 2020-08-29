@@ -45,25 +45,31 @@
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  // margin-bottom: 94px;
 }
 
 
 .portfolio-items {
   /* width: calc((100%-60px) / 3); */
-  width: 370px;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
-  
-    &:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-  
-    &:not(:nth-child(n + 7)) {
+  &:not(:last-child)
+  {
     margin-bottom: 30px;
   }
+  &:last-child {
+    margin-bottom: 60px;
+  }
+  //   &:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
+  
+  //   &:not(:nth-child(n + 7)) {
+  //   margin-bottom: 30px;
+  // }
     &:hover,
     &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),

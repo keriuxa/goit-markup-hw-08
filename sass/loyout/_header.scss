@@ -69,6 +69,7 @@
 display: none;
 position: absolute;
 top: 100%;
+left: 0px;
 text-align: center;
 width: 100%;
 background-color: white;
@@ -78,7 +79,8 @@ z-index: 100;
   display: block;
 }
 
-.curent > a {
+.curent-studio > a,
+.curent-portfolio > a {
   color: $acent-color;
 }
 }
@@ -173,17 +175,24 @@ z-index: 100;
 }
 
 
-.curent::after {
+.curent-studio::after,
+.curent-portfolio:after {
   display: block;
   content: "";
-  width: 100%;
-  height: 4px;
+    height: 4px;
+  left: 50%;
+  transform: translateX(-50%); ;
   background-color: $acent-color;
   border-radius: 2px;
   position: absolute;
   bottom: 0px;
 }
-
+.curent-studio::after{
+width: 66px;
+}
+.curent-portfolio:after {
+  width: 99px; }
+  
 
 
 
