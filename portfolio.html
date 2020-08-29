@@ -214,11 +214,12 @@
     </main>
 
     <!--Футтер-->
-    <footer class="footer">
+    <footer class="footer ">
       <div class="container">
-        <section id="contacts">
+        <div id="contacts" class="contacts">
           <h2 hidden>футтер</h2>
-          <a href="./index.html" class="link logo-footer">
+          <div class="logo-container">
+                  <a href="./index.html" class="link logo-footer">
             <span class="logo-web-footer">Web </span
             ><span class="logo-studio-footer">Studio</span></a
           >
@@ -247,8 +248,9 @@
               </li>
             </ul>
           </address>
-        </section>
-        <section>
+        </div>
+          
+          <div>
           <h2 class="footer-title">Присоединяйтесь</h2>
           <ul class="list social-links-footer">
             <li>
@@ -280,13 +282,13 @@
               ></a>
             </li>
           </ul>
-        </section>
+        </div>
+        </div>
+      
         <div class="subscribe-section">
+          <h2 class="footer-title" >Подпишитесь на рассылку</h2>
           <form class="subscribe-form" action="#">
-            <label for="Email-input" class="footer-title"
-              >Подпишитесь на рассылку</label
-            >
-            <input
+              <input
               id="Email-input"
               placeholder="E-mail"
               type="email"

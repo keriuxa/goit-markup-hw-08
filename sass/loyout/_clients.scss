@@ -8,15 +8,25 @@
 
 .clients-logo {
   width: calc((100% - 30px) / 2);
-  fill: #afb1b8;
+  height: 100%;
+  
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  a>svg {
+    fill: #afb1b8;
+  }
+  a>svg:focus,
+  a>svg:hover
+  {
+    fill: $acent-color;}
 
   &:focus,
   &:hover {
@@ -44,6 +54,14 @@
 &:not(:nth-child(n+4)){
   margin-bottom: 30px;
 }
+}
+
+@media screen and (min-width: 1200px){
+  width: calc((100% - 150px) / 6);
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+  margin-bottom: 0px;
 }
 }
 
