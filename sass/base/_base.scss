@@ -23,11 +23,13 @@ img {
   display: block;
 }
 
+
 .list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
+
 
 .link {
   text-decoration: none;
@@ -37,16 +39,17 @@ img {
 }
 
 .container {
-  width: 100%;
+  width:100%;
   padding-left: 15px;
   padding-right: 15px;
- 
+  margin: 0 auto;
+  box-sizing: border-box;
   
 
   @media screen and (min-width: 480px){
-      width: 480px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 480px;    
+     
+      // margin-right: 0, auto;
   }
 
   @media screen and (min-width: 768px){

@@ -17,18 +17,18 @@
   // li:not(:last-child) {
   // margin-right: 30px;
   // }
-  //  li {
-  //    width:calc(100% - 30px);
-  // }
+   li {
+     width:100%;
+  }
   
 
-  &-ikon {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #f5f4fa;
-    }
+  // &-ikon {
+  //   // padding-left: 100px;
+  //   // padding-right: 100px;
+  //   padding-top: 25px;
+  //   padding-bottom: 25px;
+  //   background-color: #f5f4fa;
+  //   }
   }
 
    

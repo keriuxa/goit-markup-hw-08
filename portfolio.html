@@ -15,16 +15,25 @@
     <!--ХЕДЕР-->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a href="./index.html" class="link">
-            <span class="logo-web">Web </span
-            ><span class="logo-studio">Studio</span></a
-          >
+        
+        <a href="./index.html" class="link">
+            <span class="logo-web">Web</span>
+            <span class="logo-studio">Studio</span></a
+        >
+       
+          <button class="menu-btn" aria-expanded="false" aria-controls="navigation" data-menu-button>
+            <svg class="mobile-menu-svg"   width="24" height="16">
+          <use href="./images/sprite.svg#menu_mobile" class="icon-menu"></use>
+          <use href="./images/sprite.svg#icon-close-menu" class="icon-close"></use>
+               </svg>
+      </button>
+       
+        <nav class="navigation" data-menu>         
           <ul class="list header-navigation">
-            <li class="header-items">
+            <li class="header-items curent">
               <a href="./index.html" class="link">Студия</a>
             </li>
-            <li class="header-items curent">
+            <li class="header-items">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
             <li class="header-items">
@@ -50,11 +59,10 @@
                 +38 096 111 11 11</a
               >
             </li>
-          </ul>
+          </ul>          
         </nav>
       </div>
     </header>
-
     <main>
       <!--Список фильтров-->
       <h1 hidden>Наше портфолио</h1>
@@ -291,5 +299,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

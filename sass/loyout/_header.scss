@@ -1,8 +1,9 @@
 .header
  {
-  border: 1px solid #ececec;
+  // border: 1px solid #ececec;
+  box-sizing: border-box;
 
-  .container{
+  .container {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -71,6 +72,7 @@ top: 100%;
 text-align: center;
 width: 100%;
 background-color: white;
+z-index: 100;
 
 &.is-open  {
   display: block;

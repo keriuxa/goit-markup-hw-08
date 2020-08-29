@@ -42,13 +42,13 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -86,6 +86,7 @@ img {
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  margin: 95px 15px;
 }
 
 .modal-window h2 {
@@ -309,7 +310,7 @@ img {
 }
 
 .header {
-  border: 1px solid #ececec;
+  box-sizing: border-box;
 }
 
 .header .container {
@@ -363,6 +364,7 @@ img {
   text-align: center;
   width: 100%;
   background-color: white;
+  z-index: 100;
 }
 
 .navigation.is-open {
@@ -500,7 +502,7 @@ img {
 
 .heroes {
   max-width: 1600px;
-  width: 100%;
+  widows: 100%;
   height: 400px;
   margin-bottom: 60px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/heroes/Header.jpg);
@@ -508,8 +510,6 @@ img {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .advantages {
@@ -528,12 +528,8 @@ img {
   margin-bottom: 30px;
 }
 
-.advantages-ikon {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #f5f4fa;
+.advantages li {
+  width: 100%;
 }
 
 .antena::before {
@@ -610,7 +606,7 @@ img {
 .teamattes-item > li {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  width: calc(100% - 30px);
+  width: calc(100% - 60px);
   height: 100%;
 }
 
@@ -679,7 +675,7 @@ img {
 }
 
 .clients-logo {
-  width: calc((100% - 30px) / 2);
+  width: calc((100% - 60px) / 2);
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -865,7 +861,7 @@ img {
 }
 
 .btn-portfolio {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
@@ -882,6 +878,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: 0px;
+  margin-bottom: 15px;
 }
 
 .btn-portfolio:focus, .btn-portfolio:hover {
@@ -892,9 +889,11 @@ img {
 
 .portolio-buttons {
   display: flex;
-  margin-top: 93px;
+  margin-top: 51px;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .portolio-buttons li:not(:last-child) {
