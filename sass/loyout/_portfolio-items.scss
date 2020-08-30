@@ -60,20 +60,21 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) and (max-width: 767px){
     &:not(:last-child)
-    {margin-bottom: 30px;}
+    {
+      margin-bottom: 30px;
+    }
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) 
+  {
     width:calc((100% - 30px)/2);
 
     &:nth-child(odd){
      margin-right: 30px;
    }
-  //  &:nth-child(n+2) {
-  //    margin-bottom: 0px;
-  //  }
-   &:not(:nth-child(n+3)) {
+ 
+   &:not(:last-child) {
      margin-bottom: 30px;
   }
 }
@@ -92,24 +93,15 @@
     &:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
   }
-  &:nth-child(n + 7) {
-    margin-bottom: 30px;
+
 }
-  
-  &:not(:last-child)
-  {
-    margin-bottom: 30px;
-  }
-  &:last-child {
-    margin-bottom: 60px;
-  }
-  
+ 
     &:hover,
     &:focus {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
-}
+
 &-text {
   position: relative;
   height: 100%;

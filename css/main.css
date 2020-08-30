@@ -726,6 +726,12 @@ img {
   display: block;
 }
 
+@media screen and (max-width: 1199px) {
+  .advantages {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .advantages {
     display: flex;
@@ -741,15 +747,13 @@ img {
   width: 100%;
 }
 
-.advantages li {
-  width: 100%;
+@media screen and (max-width: 767px) {
+  .advantages li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.advantages li:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages li {
     width: calc((100% - 30px)/2);
   }
@@ -767,7 +771,6 @@ img {
 @media screen and (min-width: 1200px) {
   .advantages li {
     width: calc((100% - 90px)/4);
-    margin-bottom: 0px;
   }
   .advantages li:not(:last-child) {
     margin-right: 30px;
@@ -883,8 +886,13 @@ img {
 }
 
 .teamattes-item > li:not(:last-child) {
-  margin-bottom: 30px;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .teamattes-item > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1012,7 +1020,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-logo {
     width: calc((100% - 60px) / 3);
   }
@@ -1299,7 +1307,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio-items:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1312,7 +1320,7 @@ img {
   .portfolio-items:nth-child(odd) {
     margin-right: 30px;
   }
-  .portfolio-items:not(:nth-child(n+3)) {
+  .portfolio-items:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1330,18 +1338,10 @@ img {
   .portfolio-items:not(:nth-child(n + 7)) {
     margin-bottom: 30px;
   }
-  .portfolio-items:nth-child(n + 7) {
-    margin-bottom: 30px;
-  }
-  .portfolio-items:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .portfolio-items:last-child {
-    margin-bottom: 60px;
-  }
-  .portfolio-items:hover, .portfolio-items:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-  }
+}
+
+.portfolio-items:hover, .portfolio-items:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-items-text {
