@@ -117,29 +117,26 @@
         <ul class="list we-do-container">
           <li class="what-we-do">
             <img
-              src="./images/what-we-do/img-notebook.jpg"
+              srcset="./images/what-we-do/img-notebook-desktop@1x.jpg 1x,
+                      ./images/what-we-do/img-notebook-desktop@2x.jpg 2x"
               alt="картинка с ноутбуком"
-              width="370"
-              height="294"
-            />
+                          />
             <div class="we-do-items">Десктопные приложения</div>
           </li>
           <li class="what-we-do">
             <img
-              src="./images/what-we-do/img-mobilephone.jpg"
-              alt="картинка с телефоном"
-              width="370"
-              height="294"
-            />
-            <div class="we-do-items">Мобильные приложения</div>
+              srcset="./images/what-we-do/img-mobilephone-desktop@1x.jpg 1x,
+                      ./images/what-we-do/img-mobilephone-desktop@2x.jpg 2x"
+            alt="картинка с телефоном"
+                        />
+           <div class="we-do-items">Мобильные приложения</div>
           </li>
           <li class="what-we-do">
             <img
-              src="./images/what-we-do/img-computer.jpg"
+            srcset="./images/what-we-do/img-computer-desktop@1x.jpg 1x,
+                    ./images/what-we-do/img-computer-desktop@2x.jpg 2x"
               alt="картинка с компьютером"
-              width="370"
-              height="294"
-            />
+             />
             <div class="we-do-items">Дизайнерские решения</div>
           </li>
         </ul>
@@ -151,12 +148,25 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list teamattes-item">
             <li>
-              <img
-                src="./images/teammate/teammate-1.jpg"
-                alt="фото сотрудника 1"
-                width="270"
-                height="260"
-              />
+                <picture>
+                <source srcset="
+                ./images/teammate/teammate-1-desktop@1x.jpg 1x,
+                ./images/teammate/teammate-1-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)">
+                <source srcset="
+                ./images/teammate/teammate-1-tablet@1x.jpg 1x,
+                ./images/teammate/teammate-1-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)">
+                <source srcset="
+                ./images/teammate/teammate-1-mobile@1x.jpg  1x,
+                ./images/teammate/teammate-1-mobile@2x.jpg  2x
+                  " media="(min-width: 480px)">
+                 
+                  <img
+                  src="./images/teammate/teammate-1.jpg"
+                  alt="фото сотрудника 1"
+                   />
+              </picture>
               <h3 class="teamattes">Николай Кучеренко</h3>
               <p lang="en" class="teamattes-position">Product Designer</p>
               <ul class="list teamattes-social-links">
@@ -210,12 +220,28 @@
               </ul>
             </li>
             <li>
-              <img
+
+              <picture>
+                <source srcset="
+                ./images/teammate/teammate-2-desktop@1x.jpg 1x,
+                ./images/teammate/teammate-2-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)">
+                <source srcset="
+                ./images/teammate/teammate-2-tablet@1x.jpg 1x,
+                ./images/teammate/teammate-2-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)">
+                <source srcset="
+                ./images/teammate/teammate-2-mobile@1x.jpg  1x,
+                ./images/teammate/teammate-2-mobile@2x.jpg  2x
+                  " media="(min-width: 480px)">
+                 
+                  
+                   <img
                 src="./images/teammate/teammate-2.png"
                 alt="фото сотрудника 2"
-                width="270"
-                height="260"
               />
+              </picture>
+              
               <h3 class="teamattes">Ольга Иванова</h3>
               <p lang="en" class="teamattes-position">Frontend Developer</p>
               <ul class="list teamattes-social-links">
@@ -268,13 +294,28 @@
                 </li>
               </ul>
             </li>
-            <li>
-              <img
+            <li> 
+              <picture>
+                <source srcset="
+                ./images/teammate/teammate-3-desktop@1x.jpg 1x,
+                ./images/teammate/teammate-3-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)">
+                <source srcset="
+                ./images/teammate/teammate-3-tablet@1x.jpg 1x,
+                ./images/teammate/teammate-3-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)">
+                <source srcset="
+                ./images/teammate/teammate-3-mobile@1x.jpg  1x,
+                ./images/teammate/teammate-3-mobile@2x.jpg  2x
+                  " media="(min-width: 480px)">
+                 
+                  
+                   <img
                 src="./images/teammate/teammate-3.png"
                 alt="фото сотрудника 3"
-                width="270"
-                height="260"
               />
+              </picture>
+              
               <h3 class="teamattes">Андрей Шевченко</h3>
               <p lang="en" class="teamattes-position">Marketing</p>
               <ul class="list teamattes-social-links">
@@ -328,12 +369,26 @@
               </ul>
             </li>
             <li>
-              <img
+              <picture>
+                <source srcset="
+                ./images/teammate/teammate-4-desktop@1x.jpg 1x,
+                ./images/teammate/teammate-4-desktop@2x.jpg 2x
+                  " media="(min-width: 1200px)">
+                <source srcset="
+                ./images/teammate/teammate-4-tablet@1x.jpg 1x,
+                ./images/teammate/teammate-4-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)">
+                <source srcset="
+                ./images/teammate/teammate-4-mobile@1x.jpg  1x,
+                ./images/teammate/teammate-4-mobile@2x.jpg  2x
+                  " media="(min-width: 480px)">
+                 
+                  
+                   <img
                 src="./images/teammate/teammate-4.png"
-                alt="фото сотрудника 4"
-                width="270"
-                height="260"
+                alt="фото сотрудника 2"
               />
+              </picture>
               <h3 class="teamattes">Иван Николаев</h3>
               <p lang="en" class="teamattes-position">UI Designer</p>
               <ul class="list teamattes-social-links">
@@ -389,6 +444,8 @@
           </ul>
         </div>
       </section>
+
+      
 
       <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
       <section class="clients container">

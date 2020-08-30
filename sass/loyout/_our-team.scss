@@ -1,3 +1,6 @@
+.team>div{
+  background-color: #F5F4FA;
+}
 .teamattes-item {
   display: block;
   background: #ffffff;
@@ -23,7 +26,7 @@
     margin-right: 30px;
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) and (max-width:1199px){
     width:calc((100% - 30px)/2);
 
     &:nth-child(odd){
