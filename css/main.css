@@ -852,14 +852,19 @@ img {
   margin-right: 30px;
 }
 
-.team > div {
+.team {
   background-color: #F5F4FA;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+  }
 }
 
 .teamattes-item {
   display: block;
-  background: #ffffff;
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -874,6 +879,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   width: 100%;
   height: 100%;
+  background: #ffffff;
 }
 
 .teamattes-item > li:not(:last-child) {
