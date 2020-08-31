@@ -60,7 +60,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 480px) and (max-width: 767px){
+  @media screen and (max-width: 767px){
     &:not(:last-child)
     {
       margin-bottom: 30px;
@@ -118,6 +118,7 @@
   color: $main-text-color;
   margin-top: 20px;
   margin-left: 24px;
+  margin-right: 10px;
 }
 
 .portfolio-sub-title {
@@ -127,6 +128,7 @@
   color: $secondary-text-color;
   margin-bottom: 20px;
   margin-left: 24px;
+  margin-right: 10px;
 }
 
 .portfolio-text {

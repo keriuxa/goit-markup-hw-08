@@ -1307,7 +1307,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-items:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1359,6 +1359,7 @@ img {
   color: #212121;
   margin-top: 20px;
   margin-left: 24px;
+  margin-right: 10px;
 }
 
 .portfolio-sub-title {
@@ -1368,6 +1369,7 @@ img {
   color: #757575;
   margin-bottom: 20px;
   margin-left: 24px;
+  margin-right: 10px;
 }
 
 .portfolio-text {
